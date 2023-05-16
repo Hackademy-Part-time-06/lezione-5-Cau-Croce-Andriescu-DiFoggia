@@ -7,7 +7,7 @@
     <div class="card-body">
       <h5 class="card-title">{{$corsoSingolo['nome-corso']}}</h5>
       <p class="card-text">Insegnante: {{$corsoSingolo['docente']}}</p>
-      <a href="#" class="btn btn-primary">Dettaglio corso</a>
+      <a href="{{route('dettagli-corso', ['riferimento'=>$corsoSingolo['nome-corso']])}}" class="btn btn-primary">Dimmi di più</a>
     </div>
   </div>
   @empty 

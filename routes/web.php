@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', [PageController::class, 'homepage'])->name('homepage');
 Route::get('/contatti', [PageController::class, 'contatti'])->name('contatti');
 Route::get('/corsi-disponibili', [PageController::class, 'corsidisponibili'])->name('corsi-disponibili');
-Route::get('/dettagli-corso', [PageController::class, 'dettaglicorso'])->name('dettagli-corso');
-
+Route::get('/dettagli-corso/{riferimento}', [PageController::class, 'dettaglicorso'])->name('dettagli-corso');
